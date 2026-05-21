@@ -37,6 +37,36 @@
 
 
         /* 预留区域结束 */
+    /* 全局基础样式 + 蓝粉交替渐变背景 */
+    body {
+        /* 蓝色与粉色交替的流动渐变背景 */
+        background: linear-gradient(135deg, #6eb5ff, #ffb3e6, #4a9eff, #ff9fd6, #3c8eff, #ffa5d5);
+        background-size: 400% 400%;
+        animation: bluePinkFlow 12s ease infinite;
+        font-family: "Microsoft YaHei", sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    /* 背景流动动画 — 蓝色和粉色交替循环 */
+    @keyframes bluePinkFlow {
+        0% { background-position: 0% 50%; }
+        25% { background-position: 50% 70%; }
+        50% { background-position: 100% 50%; }
+        75% { background-position: 50% 30%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* 左上角学号样式 */
+    .student-id {
+        font-size: 16px;
+        font-weight: bold;
+        color: #1677ff;
+        margin-bottom: 20px;
+    }
+</style>
     </style>
 </head>
 <body>
@@ -46,6 +76,7 @@
     <!-- —————————————————————————————— -->
     <!-- 以下区域【预留：放你的作业HTML内容】 -->
     <a href="./态度批语/taidu.html">点击访问 taidu.html 页面</a>
+    <a href="./播放器标签/bofangqi.html" class="player-link">打开播放器</a>
     <!-- —————————————————————————————— -->
 
 
